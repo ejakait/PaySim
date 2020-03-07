@@ -41,7 +41,6 @@ public class Client extends SuperActor implements Steppable {
         super(CLIENT_IDENTIFIER + name);
         this.bank = bank;
     }
-
     public Client(PaySim paySim) {
         super(CLIENT_IDENTIFIER + paySim.generateId());
         this.bank = paySim.pickRandomBank();
